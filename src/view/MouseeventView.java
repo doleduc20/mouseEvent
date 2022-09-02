@@ -3,6 +3,7 @@ package view;
 import java.awt.GridLayout;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -29,6 +30,7 @@ public class MouseeventView extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         MouseeventController mouseeventController = new MouseeventController(this);
+        Font font = new Font("Arial",Font.BOLD,40);
 
         JPanel jPanel_1 = new JPanel();
         jPanel_1.setSize(300,200);
@@ -40,14 +42,21 @@ public class MouseeventView extends JFrame {
         jPanel_2.setSize(300,300);
         jPanel_2.setLayout(new GridLayout(3,3));
         JLabel jLabel_Position = new JLabel("Position");
+        jLabel_Position.setFont(font);
          jLabel_X = new JLabel("X");
+         jLabel_X.setFont(font);
          jLabel_Y = new JLabel("Y");
+         jLabel_Y.setFont(font);
          jLabel_Numberclick = new JLabel("number click: ");
+         jLabel_Numberclick.setFont(font);
          jLabel_Count = new JLabel("0");
+         jLabel_Count.setFont(font);
         
         JLabel jLabel_1 = new JLabel();
         JLabel jLabel_MouseComponent = new JLabel("Mouse is in component: ");
+        jLabel_MouseComponent.setFont(font);
          jLabel_Checkin = new JLabel();
+         jLabel_Checkin.setFont(font);
         JLabel jLabel_2 = new JLabel();
 
         jPanel_2.add(jLabel_Position);
